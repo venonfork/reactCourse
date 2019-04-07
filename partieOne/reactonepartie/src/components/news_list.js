@@ -5,7 +5,7 @@ const NewList = (props) =>{
     // console.log(props)
 const items = props.news.map((item)=>{
     return (
-        <NewItem item={item}/>
+        <NewItem key={item.id} item={item}/>
         )
 })
     return (
