@@ -5,12 +5,13 @@ import JSON from './db.json'
 import Header from './components/header'
 import NewList from './components/news_list.js';
 
+
 class App extends React.Component{
     state={
         news: JSON
     }
     render(){
-        console.log(JSON)
+        // console.log(JSON)
         return(
             <div>
                 <Header/> 
