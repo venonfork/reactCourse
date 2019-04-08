@@ -1,11 +1,12 @@
 import React from 'react'
+import '../css/styles.css' 
 
 const NewItem = ({item})=>{
-   
+//    console.log(item.title)
     return (
       
-        <div>
-            <h3>{item.title}</h3>
+        <div className="textjson">
+            <h3 className="textjsontitre">{item.title}</h3>
             <div>
                  {item.feed}
             </div>

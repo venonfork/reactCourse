@@ -1,50 +1,50 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/styles.css' 
 
 
 
-class Header extends Component{
-    state={
-        keyword:'',
-        tab1:[],
-        title: 'The titre enter: '
+const Header = (props)=>{
+    // state={
+    //     keywords:'',
+    //     tab1:[],
+    //     title: 'The titre enter: ', 
+    //     active: 'active'
 
 
-    }
+    // }
 
-    inputChange = (event)=>{
-    //    iterer si la valeur est plus grand que 5
-        // if (event.target.value.length >5){
-        //     this.state.tab1.push(this.state.keyword) 
-        //     console.log(this.state.tab1)
-        // }
+    // inputChange = (event)=>{
+    //     const value = event.target.value === '' ? 'non-active':'active'
+    //     // iterer si la valeur est plus grand que 5
+    //     // if (event.target.value.length >5){
+    //     //     this.state.tab1.push(this.state.keyword) 
+    //     //     console.log(this.state.tab1)
+    //     // }
         
-        this.setState({
-        
-            keyword: event.target.value
-        
-        })
-        
-        
+    //     this.setState({
+    //         keywords: event.target.value,
+    //         active: value
+    //     })
 
-        // console.log(this.state.keyword)
         
-     
-
-        //console.log(event.target.value)
-    }
+    //     // console.log(this.state.keyword)
+    //     //console.log(event.target.value)
+    // }
 
 
-    render(){
+    
+        // console.log(this.props.keywords)
         return(
-            <header>
+            // <header style={{background :`${this.state.Active ? 'blue': 'red'}`} }>
+            // <header className={this.state.active }>
+             <header>
                 <h1 className="logo">LOGO</h1>
-                <input type="text"  onChange={this.inputChange}/>
-                <div>{this.state.title}</div>
-                <div>{this.state.keyword}</div>
+                <input type="text"  onChange={props.keywords}/>
+                {/* <div>{this.state.title}</div> */}
+                {/* <div>{this.state.keywords}</div> */}
             </header>
         )
-    }
+
 
 }
 
