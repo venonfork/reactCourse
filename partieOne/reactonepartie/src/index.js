@@ -52,7 +52,7 @@ class App extends React.Component{
                          <h4>
                              the news are: 
                          </h4>
-//             fonction qui permetde gerer l 'affichage selon les cas les figures
+//             fonction qui permet de gerer l'affichage selon les cas les de figures
                 <NewList news={newsFilter.length === 0 ? newsWhole : newsFilter }>
                 {/* <NewList news={this.state.resultFilter === this.state.resultFilter ? this.state.resultFilter : this.state.news  }> */}
                 </NewList>
